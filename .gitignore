@@ -1,0 +1,8 @@
+.tscache/
+.vscode/
+build/
+node_modules/
+coverage/
+app/bower_components
+build_*
+tscommand-*

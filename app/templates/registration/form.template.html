@@ -1,0 +1,87 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-lg-12">
+            <h3 class="custom-title">{{presenter.title}}</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-lg-6">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" ng-class="{'is-invalid': presenter.registration.firstName.hasErrors}">
+                <input class="mdl-textfield__input" type="text" id="sample3" ng-model="presenter.registration.firstName.value"/>
+                <label class="mdl-textfield__label" for="sample3">First Name*</label>
+                <span class="mdl-textfield__error">First Name is required</span>
+            </div>
+        </div>
+        <div class="col-xs-12 col-lg-6">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" ng-class="{'is-invalid': presenter.registration.lastName.hasErrors}">
+                <input class="mdl-textfield__input" type="text" id="sample3" ng-model="presenter.registration.lastName.value"/>
+                <label class="mdl-textfield__label" for="sample3">Last Name*</label>
+                <span class="mdl-textfield__error">Last Name is required</span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-lg-6">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" ng-class="{'is-invalid': presenter.registration.mobile.hasErrors}">
+                <input class="mdl-textfield__input" type="text" id="sample3" ng-model="presenter.registration.mobile.value"/>
+                <label class="mdl-textfield__label" for="sample3">Mobile Number*</label>
+                <span class="mdl-textfield__error">Mobile Number is required</span>
+            </div>
+        </div>
+        <div class="col-xs-12 col-lg-6">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" ng-class="{'is-invalid': presenter.registration.email.hasErrors}">
+                <input class="mdl-textfield__input" type="text" id="sample3" ng-model="presenter.registration.email.value"/>
+                <label class="mdl-textfield__label" for="sample3">Email Address*</label>
+                <span class="mdl-textfield__error">Email Address is required</span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-lg-6">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" ng-class="{'is-invalid': presenter.registration.checkIn.hasErrors}">
+                <input class="mdl-textfield__input" type="text" id="sample3" ng-model="presenter.registration.checkIn.value"/>
+                <label class="mdl-textfield__label" for="sample3">Check In date*</label>
+                <span class="mdl-textfield__error">Check In date is required</span>
+            </div>
+        </div>
+        <div class="col-xs-12 col-lg-6">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" ng-class="{'is-invalid': presenter.registration.checkOut.hasErrors}">
+                <input class="mdl-textfield__input" type="text" id="sample3" ng-model="presenter.registration.checkOut.value"/>
+                <label class="mdl-textfield__label" for="sample3">Check out date*</label>
+                <span class="mdl-textfield__error">Check out date is required</span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-lg-6">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" ng-class="{'is-invalid': presenter.registration.adults.hasErrors}">
+                <input class="mdl-textfield__input" type="text" id="sample3" ng-model="presenter.registration.adults.value"/>
+                <label class="mdl-textfield__label" for="sample3">Number of adults*</label>
+                <span class="mdl-textfield__error">Number of adults is required</span>
+            </div>
+        </div>
+        <div class="col-xs-12 col-lg-6">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" ng-class="{'is-invalid': presenter.registration.children.hasErrors}">
+                    <input class="mdl-textfield__input" type="text" id="sample3" ng-model="presenter.registration.children.value"/>
+                    <label class="mdl-textfield__label" for="sample3">Number of children*</label>
+                    <span class="mdl-textfield__error">Number of children is required</span>
+                </div>
+            </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-lg-12">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" ng-class="{'is-invalid': presenter.registration.comments.hasErrors}">
+                <input class="mdl-textfield__input" type="text" id="sample3" ng-model="presenter.registration.comments.value"/>
+                <label class="mdl-textfield__label" for="sample3">Comments*</label>
+                <span class="mdl-textfield__error">Comments are required</span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-lg-12">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" ng-click="presenter.submitRegistration()">
+                Submit
+            </button>
+        </div>
+    </div>
+</div>

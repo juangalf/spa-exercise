@@ -1,0 +1,64 @@
+<div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-lg-12">
+        <h3 class="custom-title">{{presenter.title}}</h3>
+      </div>
+    </div>
+    <div class="row button-container">
+        <div class="col-xs-12 col-lg-12">
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" ng-click="presenter.editRegistration()">
+                Edit
+            </button>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-lg-12">
+        <table class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+          <thead>
+            <tr>
+              <th class="mdl-data-table__cell--non-numeric">Field</th>
+              <th class="mdl-data-table__cell--non-numeric">Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="mdl-data-table__cell--non-numeric">First Name</td>
+              <td class="mdl-data-table__cell--non-numeric">{{presenter.registration.firstName.value}}</td>
+            </tr>
+            <tr>
+              <td class="mdl-data-table__cell--non-numeric">Last Name</td>
+              <td class="mdl-data-table__cell--non-numeric">{{presenter.registration.lastName.value}}</td>
+            </tr>
+            <tr>
+              <td class="mdl-data-table__cell--non-numeric">Mobile Number</td>
+              <td class="mdl-data-table__cell--non-numeric">{{presenter.registration.mobile.value}}</td>
+            </tr>
+            <tr>
+              <td class="mdl-data-table__cell--non-numeric">Email Address</td>
+              <td class="mdl-data-table__cell--non-numeric">{{presenter.registration.email.value}}</td>
+            </tr>
+            <tr>
+              <td class="mdl-data-table__cell--non-numeric">Check In date</td>
+              <td class="mdl-data-table__cell--non-numeric">{{presenter.registration.checkIn.value}}</td>
+            </tr>
+            <tr>
+              <td class="mdl-data-table__cell--non-numeric">Check Out date</td>
+              <td class="mdl-data-table__cell--non-numeric">{{presenter.registration.checkOut.value}}</td>
+            </tr>
+            <tr>
+              <td class="mdl-data-table__cell--non-numeric">Number of Adults</td>
+              <td class="mdl-data-table__cell--non-numeric">{{presenter.registration.adults.value}}</td>
+            </tr>
+            <tr>
+              <td class="mdl-data-table__cell--non-numeric">Number of children</td>
+              <td class="mdl-data-table__cell--non-numeric">{{presenter.registration.children.value}}</td>
+            </tr>
+            <tr>
+              <td class="mdl-data-table__cell--non-numeric">Comments</td>
+              <td class="mdl-data-table__cell--non-numeric">{{presenter.registration.comments.value}}</td>
+            </tr>
+          </tbody>
+      </table>
+    </div>
+  </div>
+</div>
